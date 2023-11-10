@@ -223,7 +223,27 @@ Specifies the source of the base image. You can either choose from a curated gal
 :::moniker range=">=azure-pipelines-2020"
 
 **`baseImage`** - **Base image**<br>
-`string`. Required when `baseImageSource = default && templateType = builtin`. Allowed values: `MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:windows` (Windows 2012-R2-Datacenter), `MicrosoftWindowsServer:WindowsServer:2016-Datacenter:windows` (Windows 2016-Datacenter), `MicrosoftWindowsServer:WindowsServer:2012-Datacenter:windows` (Windows 2012-Datacenter), `MicrosoftWindowsServer:WindowsServer:2008-R2-SP1:windows` (Windows 2008-R2-SP1), `Canonical:UbuntuServer:14.04.4-LTS:linux` (Ubuntu 14.04.4-LTS), `Canonical:UbuntuServer:16.04-LTS:linux` (Ubuntu 16.04-LTS), `Canonical:UbuntuServer:18.04-LTS:linux` (Ubuntu 18.04-LTS), `RedHat:RHEL:7.2:linux` (RHEL 7.2), `RedHat:RHEL:6.8:linux` (RHEL 6.8), `OpenLogic:CentOS:7.2:linux` (CentOS 7.2), `OpenLogic:CentOS:6.8:linux` (CentOS 6.8), `credativ:Debian:8:linux` (Debian 8), `credativ:Debian:7:linux` (Debian 7), `SUSE:openSUSE-Leap:42.2:linux` (openSUSE-Leap 42.2), `SUSE:SLES:12-SP2:linux` (SLES 12-SP2), `SUSE:SLES:11-SP4:linux` (SLES 11-SP4). Default value: `MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:windows`.<br>
+`string`. Required when `baseImageSource = default && templateType = builtin`. Allowed values:
+
+- `MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:windows` (Windows 2012-R2-Datacenter)
+- `MicrosoftWindowsServer:WindowsServer:2016-Datacenter:windows` (Windows 2016-Datacenter)
+- `MicrosoftWindowsServer:WindowsServer:2012-Datacenter:windows` (Windows 2012-Datacenter)
+- `MicrosoftWindowsServer:WindowsServer:2008-R2-SP1:windows` (Windows 2008-R2-SP1)
+- `Canonical:UbuntuServer:14.04.4-LTS:linux` (Ubuntu 14.04.4-LTS)
+- `Canonical:UbuntuServer:16.04-LTS:linux` (Ubuntu 16.04-LTS)
+- `Canonical:UbuntuServer:18.04-LTS:linux` (Ubuntu 18.04-LTS)
+- `RedHat:RHEL:7.2:linux` (RHEL 7.2)
+- `RedHat:RHEL:6.8:linux` (RHEL 6.8)
+- `OpenLogic:CentOS:7.2:linux` (CentOS 7.2)
+- `OpenLogic:CentOS:6.8:linux` (CentOS 6.8)
+- `credativ:Debian:8:linux` (Debian 8)
+- `credativ:Debian:7:linux` (Debian 7)
+- `SUSE:openSUSE-Leap:42.2:linux` (openSUSE-Leap 42.2)
+- `SUSE:SLES:12-SP2:linux` (SLES 12-SP2)
+- `SUSE:SLES:11-SP4:linux` (SLES 11-SP4)
+
+Default value: `MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:windows`.<br>
+
 <!-- :::editable-content name="helpMarkDown"::: -->
 Chooses from a curated list of OS images. This will be used for installing pre-requisite(s) and application(s) before capturing a machine image.
 <!-- :::editable-content-end::: -->
@@ -234,7 +254,26 @@ Chooses from a curated list of OS images. This will be used for installing pre-r
 :::moniker range="=azure-pipelines-2019.1"
 
 **`baseImage`** - **Base image**<br>
-`string`. Required when `baseImageSource = default && templateType = builtin`. Allowed values: `MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:windows` (Windows 2012-R2-Datacenter), `MicrosoftWindowsServer:WindowsServer:2016-Datacenter:windows` (Windows 2016-Datacenter), `MicrosoftWindowsServer:WindowsServer:2012-Datacenter:windows` (Windows 2012-Datacenter), `MicrosoftWindowsServer:WindowsServer:2008-R2-SP1:windows` (Windows 2008-R2-SP1), `Canonical:UbuntuServer:14.04.4-LTS:linux` (Ubuntu 14.04.4-LTS), `Canonical:UbuntuServer:16.04-LTS:linux` (Ubuntu 16.04-LTS), `RedHat:RHEL:7.2:linux` (RHEL 7.2), `RedHat:RHEL:6.8:linux` (RHEL 6.8), `OpenLogic:CentOS:7.2:linux` (CentOS 7.2), `OpenLogic:CentOS:6.8:linux` (CentOS 6.8), `credativ:Debian:8:linux` (Debian 8), `credativ:Debian:7:linux` (Debian 7), `SUSE:openSUSE-Leap:42.2:linux` (openSUSE-Leap 42.2), `SUSE:SLES:12-SP2:linux` (SLES 12-SP2), `SUSE:SLES:11-SP4:linux` (SLES 11-SP4). Default value: `MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:windows`.<br>
+`string`. Required when `baseImageSource = default && templateType = builtin`. Allowed values: 
+
+- `MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:windows` (Windows 2012-R2-Datacenter)
+- `MicrosoftWindowsServer:WindowsServer:2016-Datacenter:windows` (Windows 2016-Datacenter)
+- `MicrosoftWindowsServer:WindowsServer:2012-Datacenter:windows` (Windows 2012-Datacenter)
+- `MicrosoftWindowsServer:WindowsServer:2008-R2-SP1:windows` (Windows 2008-R2-SP1)
+- `Canonical:UbuntuServer:14.04.4-LTS:linux` (Ubuntu 14.04.4-LTS)
+- `Canonical:UbuntuServer:16.04-LTS:linux` (Ubuntu 16.04-LTS)
+- `RedHat:RHEL:7.2:linux` (RHEL 7.2)
+- `RedHat:RHEL:6.8:linux` (RHEL 6.8)
+- `OpenLogic:CentOS:7.2:linux` (CentOS 7.2)
+- `OpenLogic:CentOS:6.8:linux` (CentOS 6.8)
+- `credativ:Debian:8:linux` (Debian 8)
+- `credativ:Debian:7:linux` (Debian 7)
+- `SUSE:openSUSE-Leap:42.2:linux` (openSUSE-Leap 42.2)
+- `SUSE:SLES:12-SP2:linux` (SLES 12-SP2)
+- `SUSE:SLES:11-SP4:linux` (SLES 11-SP4)
+
+  Default value: `MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:windows`.<br>
+  
 <!-- :::editable-content name="helpMarkDown"::: -->
 Chooses from a curated list of OS images. This will be used for installing pre-requisite(s) and application(s) before capturing a machine image.
 <!-- :::editable-content-end::: -->
